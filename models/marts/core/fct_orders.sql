@@ -9,6 +9,7 @@ final as (
     select orders.order_id, 
     payments.payment_id, 
     orders.customer_id,
+    orders.order_date
     payments.amount ,
     orders.status
     from orders
