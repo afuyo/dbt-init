@@ -1,6 +1,6 @@
 with
 payments as (
-    select payments_id from {{ ref('stg_payments')}}
+    select payment_id from {{ ref('stg_payments')}}
 ),
 final as (
     select orders.order_id, payments.payments_id, orders.customer_id 
