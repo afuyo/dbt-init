@@ -9,7 +9,7 @@ final as (
     select orders.order_id, 
     payments.payment_id, 
     orders.customer_id,
-    orders.amount 
+    payments.amount 
     from orders
     left join payments using(order_id)
 
