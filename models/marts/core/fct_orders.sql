@@ -10,7 +10,7 @@ final as (
     payments.payment_id, 
     orders.customer_id,
     payments.amount ,
-    orders_status
+    orders.status
     from orders
     left join payments using(order_id)
 
