@@ -3,7 +3,7 @@ orders as (
     select * from {{ref('stg_orders')}}
 ),
 payments as (
-    select payment_id,order_id from {{ ref('stg_payments')}}
+    select * from {{ ref('stg_payments')}}
 ),
 final as (
     select orders.order_id, 
