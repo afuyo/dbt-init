@@ -1,5 +1,8 @@
 {% macro get_schema_json() %}
-{% set my_json_str = '{"Account_Search_FirstLast_vod__c": "VARCHAR",
-  "Account_Search_LastFirst_vod__c": "VARCHAR"}' %}
+{% set my_json_str = '{
+  "productId": "NUMBER",
+  "productName": "VARCHAR",
+  "price": "NUMBER"
+}' %}
 {{ return(my_json_str) }}
 {% endmacro %}
