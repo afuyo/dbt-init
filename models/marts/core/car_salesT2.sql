@@ -18,7 +18,11 @@ lateral flatten(input => schema:properties);
                   'id' : node.id,
                }] %}
 {% endif %}
-
+  {% for key, value in properties_dict.items() %}
+  {{log("printing for loop ########")}}
+    {{log(key) }}
+    {{ log(value) }}
+  {% endfor %}
 {% set my_json_str = '{"Account_Search_FirstLast_vod__c": "VARCHAR",
   "Account_Search_LastFirst_vod__c": "VARCHAR"}' %}
 {% set my_json_str2 = '{
